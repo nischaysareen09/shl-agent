@@ -7,8 +7,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# Build the clean catalog at image build time so it's ready before first request
-RUN python scripts/build_catalog.py
 
 EXPOSE 8000
 
